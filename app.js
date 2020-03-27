@@ -49,7 +49,7 @@ function draw(userChoice, computerChoice){
 	const userChoice_div = document.getElementById(userChoice)
 	const smallUserWord = "user".fontsize(3).sub();
 	const smallCompWord = "comp".fontsize(3).sub();
-	result_div.innerHTML = `${convertToWord(userChoice)}${smallUserWord} lequals ${convertToWord(computerChoice)}${smallCompWord}. It's a draw! 🏳️`;
+	result_div.innerHTML = `${convertToWord(userChoice)}${smallUserWord} equals ${convertToWord(computerChoice)}${smallCompWord} It's a draw! 🏳️`;
 	userChoice_div.classList.add('grey-glow');
 	setTimeout(() => userChoice_div.classList.remove('grey-glow'), 300);
 }
