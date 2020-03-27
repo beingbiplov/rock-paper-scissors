@@ -6,7 +6,7 @@ const scoreBoard_div = document.querySelector(".score-board");
 const result_div = document.querySelector(".result > p");
 const rock_div = document.getElementById('r');
 const paper_div = document.getElementById('p');
-const sissors_div = document.getElementById('s');
+const scissors_div = document.getElementById('s');
 function getComputerChoice(){
 	const choices = ['r', 'p', 's'];
 	const randomNumber = Math.floor(Math.random() * 3)
@@ -16,7 +16,7 @@ function getComputerChoice(){
 function convertToWord(letter){
 	if(letter == 'r') return 'Rock';
 	if(letter == 'p') return 'Paper';
-	return "Sissors"
+	return "scissors"
 }
 
 function win(userChoice, computerChoice){
@@ -83,7 +83,7 @@ function main(){
 
 	paper_div.addEventListener('click', () => game("p"));
 
-	sissors_div.addEventListener('click', () => game("s"));
+	scissors_div.addEventListener('click', () => game("s"));
 }
 
 main();
